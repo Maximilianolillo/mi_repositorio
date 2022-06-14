@@ -79,7 +79,7 @@ footer{
     justify-items: center;
     justify-content: center;
 }
-/*GRIDS-INICIO*/
+/*GRIDS-INICIO
 header {
     grid-area: header;
 }
@@ -94,9 +94,9 @@ header {
 }
 footer{
     grid-area: footer;
-} 
+} */
 
-/*GRID-EQUIPO*/
+/*GRID-EQUIPO
 .cardequipo p{
     margin-left: 0;
 }
@@ -114,9 +114,9 @@ footer{
     margin-left: 20px;
     margin-top: 15px;
     height: 300px;
-}
+}*/
 
-/*GRID-HORARIO*/
+/*GRID-HORARIO
 .cardhorario {
     display: flex;
 }
@@ -130,7 +130,7 @@ footer{
     margin-left: 20px;
     margin-top: 15px;
     height: 300px;
-}
+}*/
 /*CONTACTO-FOCUS*/
 input, textarea {
     width: 130px;
@@ -156,7 +156,8 @@ textarea:focus{
     grid-template-areas: "header header header" "menu menu menu" "portada portada portada" "articulo articulo articulo" "footer footer footer";
      
    }
-   .cardequipo{
+}
+   /*.cardequipo{
        display: block;
    }
    .cardequipo img{
@@ -167,5 +168,4 @@ textarea:focus{
    }
    .cardhorario img{
        width: 90%;
-   }
-}
+   }*/
