@@ -79,6 +79,12 @@ footer{
     justify-items: center;
     justify-content: center;
 }
+/*GALERIA CON BOOTSTRAP*/
+.galeria{
+    width: 90%;
+    height: 70%;
+    padding-left: 10%;
+}
 /*GRIDS-INICIO
 header {
     grid-area: header;
@@ -131,6 +137,9 @@ footer{
     margin-top: 15px;
     height: 300px;
 }*/
+
+
+
 /*CONTACTO-FOCUS*/
 input, textarea {
     width: 130px;
@@ -148,7 +157,7 @@ textarea:focus{
     font-size: 25px;
 }
 
-@media screen and (max-width:800px){
+/*@media screen and (max-width:800px){
     .containerinicio{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -156,7 +165,7 @@ textarea:focus{
     grid-template-areas: "header header header" "menu menu menu" "portada portada portada" "articulo articulo articulo" "footer footer footer";
      
    }
-}
+}*/
    /*.cardequipo{
        display: block;
    }
