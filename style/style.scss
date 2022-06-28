@@ -1,107 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200&family=Oswald:wght@200;400&display=swap');
-$colorhover: rgb(56, 56, 197);
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200&family=Oswald:wght@200;400&display=swap");
+@import "colores";
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: rgb(194,245,255);
-    background: linear-gradient(180deg, rgba(194,245,255,1) 0%, rgba(255,255,255,1) 74%);
-    font-family: 'Oswald', sans-serif;
-    font-style: italic;
+
+body {
+  background: rgb(194, 245, 255);
+  background: linear-gradient(180deg, rgb(194, 245, 255) 0%, rgb(255, 255, 255) 74%);
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
 }
 
 footer,
 nav {
-    border-radius: 15px;
-    background-color: #80DEEA;
+  border-radius: 15px;
+  background-color: $colorprimario;
 }
 
 /*TITULO-ANIMATION*/
-
 h1 {
-    animation-duration: 1;
-    animation-name: aparecer;
-    animation-iteration-count:1;
+  -webkit-animation-duration: 1;
+  animation-duration: 1;
+  -webkit-animation-name: aparecer;
+  animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes aparecer {
-    0% {opacity: 0;}
-    100% {opacity: 1;}}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*MENU aplicando nesting o anidacion con &*/
+.logo {
+  position: absolute;
+  top: 3.5%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+.menu2{
+  background-color:$colorprimario;
+  opacity: .6;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      font-size: 1rem;
+      margin: 0px 30px 0px 0px;
+      a{
+        color: black;
+        &:hover{
+          color: red;
+        }
+      }
+    }
+  }
+}
+
 
 /*MENU-HOVER*/
-.menu{
-    
-    height: 60px;
-    margin: 0 auto;
-    position: relative;
-    margin-top: 5px;
+.menu {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5px;
 }
-.nav_link{
-     display: flex;
-     font-weight: 500;
-     font-size: 15px;
-     position: relative;
-     overflow: hidden;
-     text-decoration: none;
-     text-transform: uppercase;
-     transition: .3s;
+
+.nav_link {
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
-.nav_link::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: $colorhover;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+.nav_link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 50%;
+  height: 2px;
+  background: rgb(56, 56, 197);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.nav_link::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: $colorhover;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+.nav_link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 50%;
+  height: 2px;
+  background: rgb(56, 56, 197);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.nav_link:hover{
-    color: $colorhover;
+
+.nav_link:hover {
+  color: rgb(56, 56, 197);
 }
-.nav_link:hover::before{
-    right: 0;
+
+.nav_link:hover::before {
+  right: 0;
 }
-.nav_link:hover::after{
-    left: 0;
+
+.nav_link:hover::after {
+  left: 0;
 }
 
 /*FOOTER*/
-footer{
-    justify-items: center;
-    justify-content: center;
+footer {
+  justify-items: center;
+  justify-content: center;
 }
+
 /*GALERIA CON BOOTSTRAP*/
-.galeria{
-    width: 90%;
-    height: 70%;
-    padding-left: 10%;
+.galeria {
+  width: 90%;
+  height: 70%;
+  padding-left: 10%;
 }
 
 /*CONTACTO-FOCUS*/
 input, textarea {
-    width: 130px;
-    height: 30px;
-    transition: all 1s;
-}
-input:focus{
-    width: 230px;
-    height: 60px;
-    font-size: 25px;
-}
-textarea:focus{
-    width: 240px;
-    height: auto;
-    font-size: 25px;
+  width: 130px;
+  height: 30px;
+  transition: all 1s;
 }
 
+input:focus {
+  width: 230px;
+  height: 60px;
+  font-size: 25px;
+}
+
+textarea:focus {
+  width: 240px;
+  height: auto;
+  font-size: 25px;
+}
