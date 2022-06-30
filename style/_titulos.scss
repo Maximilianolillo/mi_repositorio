@@ -1,0 +1,26 @@
+/*TITULO-ANIMATION*/
+h1 {
+    -webkit-animation-duration: 1;
+    animation-duration: 1;
+    -webkit-animation-name: aparecer;
+    animation-name: aparecer;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

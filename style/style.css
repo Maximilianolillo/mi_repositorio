@@ -4,17 +4,29 @@
   padding: 0;
 }
 
+/*COLORES*/
 body {
-  background: rgb(194, 245, 255);
   background: linear-gradient(180deg, rgb(194, 245, 255) 0%, rgb(255, 255, 255) 74%);
   font-family: "Oswald", sans-serif;
   font-style: italic;
+}
+
+/*PARRAFO INDEX*/
+.centrado {
+  margin-left: 1%;
+  width: 98%;
 }
 
 footer,
 nav {
   border-radius: 15px;
   background-color: #80DEEA;
+}
+
+/*FOOTER*/
+footer {
+  justify-items: center;
+  justify-content: center;
 }
 
 /*TITULO-ANIMATION*/
@@ -123,19 +135,6 @@ h1 {
   left: 0;
 }
 
-/*FOOTER*/
-footer {
-  justify-items: center;
-  justify-content: center;
-}
-
-/*GALERIA CON BOOTSTRAP*/
-.galeria {
-  width: 90%;
-  height: 70%;
-  padding-left: 10%;
-}
-
 /*CONTACTO-FOCUS*/
 input, textarea {
   width: 130px;
@@ -153,4 +152,11 @@ textarea:focus {
   width: 240px;
   height: auto;
   font-size: 25px;
+}
+
+/*GALERIA CON BOOTSTRAP*/
+.galeria {
+  width: 90%;
+  height: 70%;
+  padding-left: 10%;
 }/*# sourceMappingURL=style.css.map */

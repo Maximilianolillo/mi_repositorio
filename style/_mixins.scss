@@ -1,0 +1,21 @@
+
+body {
+  background: $colordegrade;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+}
+/*PARRAFO INDEX*/
+.centrado{
+  margin-left: 1%;
+  width: 98%;
+}
+footer,
+nav {
+  border-radius: 15px;
+  background-color: $colorprimario;
+}
+/*FOOTER*/
+footer {
+  justify-items: center;
+  justify-content: center;
+}
