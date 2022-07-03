@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: $colorbody;
+    background: $colorgradiente;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+  /*PARRAFO INDEX*/
+
+  .centrado{
+    margin-left: 1%;
+    width: 98%;
+  }
+  footer,
+  nav {
+    border-radius: 20px;
+    background-color: $colorprimario;
+  }
+  /*FOOTER*/
+
+  footer {
+    justify-items: center;
+    justify-content: center;
+  }
+  /*EXTEND*/
+  
+  .extra{
+    border-radius: 20px;
+  }

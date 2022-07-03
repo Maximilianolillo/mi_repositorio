@@ -1,0 +1,26 @@
+/*APLICANDO MAPA Y MAP GET A LAS TARJETAS DE EQUIPO*/
+
+@if $colortarjeta == "relleno"{
+    @for $i from 1 through 2{
+    .color-tarjeta#{$i} {
+        background-color: map-get($map: $mapaColores, $key: $i);
+    } 
+  } 
+}
+/*EXTEND*/
+
+.color-tarjeta1{
+    @extend .extra;
+}
+.color-tarjeta2{
+    @extend .extra;
+}
+/*APLICANDO UN MIXIN A TARJETA DE HORARIO*/
+
+@if $colortarjeta3 == "borde"{
+    @each $i2, $color in $mapaColores {
+        .color-borde{
+            @include bordercolor(10px, double, $color)
+        }
+    }
+}
