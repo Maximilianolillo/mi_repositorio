@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200&family=Oswald:wght@200;400&display=swap");
+/*COLORES*/
+/* Mapa */
 * {
   margin: 0;
   padding: 0;
 }
 
-/*COLORES*/
 body {
+  background: rgb(194, 245, 255);
   background: linear-gradient(180deg, rgb(194, 245, 255) 0%, rgb(255, 255, 255) 74%);
   font-family: "Oswald", sans-serif;
   font-style: italic;
@@ -19,7 +21,7 @@ body {
 
 footer,
 nav {
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #80DEEA;
 }
 
@@ -27,6 +29,34 @@ nav {
 footer {
   justify-items: center;
   justify-content: center;
+}
+
+/*EXTEND*/
+.extra, .color-tarjeta2, .color-tarjeta1 {
+  border-radius: 20px;
+}
+
+/*APLICANDO MAPA Y MAP GET A LAS TARJETAS DE EQUIPO*/
+.color-tarjeta1 {
+  background-color: rgb(255, 42, 78);
+}
+
+.color-tarjeta2 {
+  background-color: rgb(73, 209, 255);
+}
+
+/*EXTEND*/
+/*APLICANDO UN MIXIN A TARJETA DE HORARIO*/
+.color-borde {
+  border-width: 10px;
+  border-style: double;
+  border-color: rgb(255, 42, 78);
+}
+
+.color-borde {
+  border-width: 10px;
+  border-style: double;
+  border-color: rgb(73, 209, 255);
 }
 
 /*TITULO-ANIMATION*/

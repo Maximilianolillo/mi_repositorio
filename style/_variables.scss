@@ -1,8 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-/*COLORES*/  
+/*COLORES*/
+
   $colorprimario:#80DEEA;
-  $colordegrade: linear-gradient(180deg, rgb(194, 245, 255) 0%, rgb(255, 255, 255) 74%);
+  $colorbody:rgb(194,245,255);
+  $colorgradiente:linear-gradient(180deg, rgba(194,245,255,1) 0%, rgba(255,255,255,1) 74%);
   $colorhover: rgb(56, 56, 197);
+  
+
+  /* Mapa */
+
+  $colortarjeta: "relleno";
+  $colortarjeta3: "borde";
+  $mapaColores: (1: rgb(255, 42, 78) , 2: rgb(73, 209, 255));
+  
