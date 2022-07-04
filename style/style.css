@@ -85,33 +85,6 @@ h1 {
     opacity: 1;
   }
 }
-/*MENU aplicando nesting o anidacion con &*/
-.logo {
-  position: absolute;
-  top: 3.5%;
-  transform: translateY(-50%);
-  left: 20px;
-}
-
-.menu2 {
-  background-color: #80DEEA;
-  opacity: 0.6;
-}
-.menu2 ul {
-  display: flex;
-  list-style: none;
-}
-.menu2 ul li {
-  font-size: 1rem;
-  margin: 0px 30px 0px 0px;
-}
-.menu2 ul li a {
-  color: black;
-}
-.menu2 ul li a:hover {
-  color: red;
-}
-
 /*MENU-HOVER*/
 .menu {
   height: 60px;
