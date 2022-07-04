@@ -1,29 +1,4 @@
-/*MENU aplicando nesting o anidacion con &*/
-.logo {
-    position: absolute;
-    top: 3.5%;
-    transform: translateY(-50%);
-    left: 20px;
-  }
-  .menu2{
-    background-color:$colorprimario;
-    opacity: .6;
-    ul {
-      display: flex;
-      list-style: none;
-      li {
-        font-size: 1rem;
-        margin: 0px 30px 0px 0px;
-        a{
-          color: black;
-          &:hover{
-            color: red;
-          }
-        }
-      }
-    }
-  }
-  
+ 
   /*MENU-HOVER*/
 .menu {
   height: 60px;
